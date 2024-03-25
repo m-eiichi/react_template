@@ -32,7 +32,7 @@ export const EditPage = (): ReactElement => {
   };
   return (
     <section className={Styles.large_section}>
-      <Headline size="xl">React Vite Project</Headline>
+      <Headline size="xl">React Template</Headline>
       <Headline size="m">&lt; Default Input Element &gt;</Headline>
       <form noValidate onSubmit={handleSubmit(onSubmit)}>
         <ul className={Styles.form__list} role="list">

@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { MainLayout } from "@/components/templates/main_layout";
 import { Home } from "@/components/pages/home";
-import { ModalDialogPage } from "@/components/pages/ui_parts/modal_dialog";
+import { DialogPage } from "@/components/pages/ui_parts/dialog";
 import { TablePage } from "@/components/pages/ui_parts/table";
 import { EditPage } from "@/components/pages/ui_parts/input/edit";
 import { ButtonPage } from "@/components/pages/ui_elements/button";
@@ -33,7 +33,7 @@ export const RouterConfig: React.FC = () => {
             path="ui-elements/input-element"
             element={<InputElementPage />}
           />
-          <Route path="ui-parts/modal-dialog" element={<ModalDialogPage />} />
+          <Route path="ui-parts/dialog" element={<DialogPage />} />
           <Route path="ui-parts/table" element={<TablePage />} />
           <Route path="ui-parts/edit" element={<EditPage />} />
 

@@ -24,7 +24,7 @@ export const HeadlinePage = (): ReactElement => {
   const desc = "---";
   return (
     <section className={Styles.large_section}>
-      <Headline size="xl">React Vite Project</Headline>
+      <Headline size="xl">React Template</Headline>
       <Headline size="m">&lt; headline &gt;</Headline>
 
       <ComponentOutline

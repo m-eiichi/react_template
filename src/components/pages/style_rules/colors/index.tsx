@@ -6,7 +6,7 @@ import Styles from "./colors_page.module.css";
 export const ColorsPage = (): ReactElement => {
   return (
     <section className={Styles.large_section}>
-      <Headline size="xl">React Vite Project</Headline>
+      <Headline size="xl">React Template</Headline>
       <Headline size="m">&lt; colors &gt;</Headline>
       <dl className={Styles.dl_color_01} role="list">
         <div className={Styles.text_light__block}>

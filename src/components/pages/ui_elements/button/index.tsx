@@ -6,7 +6,7 @@ import Styles from "./button_page.module.css";
 export const ButtonPage = (): ReactElement => {
   return (
     <section className={Styles.large_section}>
-      <Headline size="xl">React Vite Project</Headline>
+      <Headline size="xl">React Template</Headline>
       <Headline size="m">&lt; button &gt;</Headline>
 
       <div className={Styles.ul_container}>

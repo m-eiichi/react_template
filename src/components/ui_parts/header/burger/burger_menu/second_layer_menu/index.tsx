@@ -13,13 +13,13 @@ export const SecondLayerMenu = (props: any): ReactElement => {
         onMouseLeave={props.handleMouseLeave}
       >
         <li onClick={props.onClick}>
-          <Link to="style-rules/colors">colors</Link>
+          <Link to="style-rules/colors">Colors</Link>
         </li>
         <li onClick={props.onClick}>
-          <Link to="style-rules/spaces">spaces</Link>
+          <Link to="style-rules/spaces">Spaces</Link>
         </li>
         <li onClick={props.onClick}>
-          <Link to="style-rules/images">images</Link>
+          <Link to="style-rules/images">Images</Link>
         </li>
       </ul>
       <ul
@@ -29,13 +29,13 @@ export const SecondLayerMenu = (props: any): ReactElement => {
         onMouseLeave={props.handleMouseLeave}
       >
         <li onClick={props.onClick}>
-          <Link to="ui-elements/button">button</Link>
+          <Link to="ui-elements/button">Button</Link>
         </li>
         <li onClick={props.onClick}>
-          <Link to="ui-elements/headline">headline</Link>
+          <Link to="ui-elements/headline">Headline</Link>
         </li>
         <li onClick={props.onClick}>
-          <Link to="ui-elements/input-element">input element</Link>
+          <Link to="ui-elements/input-element">Input</Link>
         </li>
       </ul>
       <ul
@@ -45,10 +45,10 @@ export const SecondLayerMenu = (props: any): ReactElement => {
         onMouseLeave={props.handleMouseLeave}
       >
         <li onClick={props.onClick}>
-          <Link to="ui-parts/modal-dialog">modal dialog</Link>
+          <Link to="ui-parts/dialog">Dialog</Link>
         </li>
         <li onClick={props.onClick}>
-          <Link to="ui-parts/table">table</Link>
+          <Link to="ui-parts/table">Table</Link>
         </li>
         <li onClick={props.onClick}>
           <Link to="ui-parts/edit">Edit</Link>
@@ -61,10 +61,10 @@ export const SecondLayerMenu = (props: any): ReactElement => {
         onMouseLeave={props.handleMouseLeave}
       >
         <li onClick={props.onClick}>
-          <Link to="project/react_table">react table</Link>
+          <Link to="project/react_table">ReactTable</Link>
         </li>
         <li onClick={props.onClick}>
-          <Link to="project/react_table_swr">react table swr</Link>
+          <Link to="project/react_table_swr">ReactTableSwr</Link>
         </li>
       </ul>
     </div>

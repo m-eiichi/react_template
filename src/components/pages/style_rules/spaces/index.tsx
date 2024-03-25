@@ -5,7 +5,7 @@ import Styles from "./spaces_page.module.css";
 export const SpacesPage = (): ReactElement => {
   return (
     <section className={Styles.large_section}>
-      <Headline size="xl">React Vite Project</Headline>
+      <Headline size="xl">React Template</Headline>
       <Headline size="m">&lt; space &gt;</Headline>
       <ul role="list">
         <li>

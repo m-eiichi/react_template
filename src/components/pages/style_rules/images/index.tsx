@@ -5,7 +5,7 @@ import Styles from "./images_page.module.css";
 export const ImagesPage = (): ReactElement => {
   return (
     <section className={Styles.large_section}>
-      <Headline size="xl">React Vite Project</Headline>
+      <Headline size="xl">React Template</Headline>
       <Headline size="m">&lt; images &gt;</Headline>
       <ul role="list">
         <li>
