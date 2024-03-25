@@ -1,0 +1,24 @@
+@import "../../../../assets/styles/extend/large_section.css";
+
+@import "../../../../assets/styles/mq.css";
+
+.large_section {
+  @extend %large_section;
+}
+
+@media (--viewport-over-desktop) {
+  .dl_color_01 {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--size-f-04);
+  }
+
+  .text_light__block {
+    grid-row: 1 / 3;
+  }
+
+  .text_dark__block {
+    grid-row: 1 / 3;
+  }
+}

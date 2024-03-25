@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/extend/large_section.css";
+
+.large_section {
+  @extend %large_section;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-f-03);
+}

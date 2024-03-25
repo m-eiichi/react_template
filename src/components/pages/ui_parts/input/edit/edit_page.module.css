@@ -1,0 +1,22 @@
+@import "../../../../../assets/styles/extend/large_section.css";
+
+.large_section {
+  @extend %large_section;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-f-04);
+}
+
+.form__list__button {
+  display: flex;
+  gap: var(--size-f-04);
+}
+
+.form__list__checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-f-04);
+}

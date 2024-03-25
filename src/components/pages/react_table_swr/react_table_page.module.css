@@ -1,0 +1,9 @@
+@import "../../../assets/styles/extend/large_section.css";
+
+.large_section {
+  @extend %large_section;
+}
+
+.align_right {
+  text-align: right;
+}

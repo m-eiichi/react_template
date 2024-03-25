@@ -1,0 +1,59 @@
+@import "../../../../assets/styles/extend/large_section.css";
+
+.large_section {
+  @extend %large_section;
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-f-04);
+  }
+
+  & li {
+    display: flex;
+    gap: var(--size-f-03);
+    align-items: center;
+  }
+}
+
+.space01 {
+  width: var(--base-size-4px);
+  height: var(--base-size-4px);
+  background-color: var(--grey-300);
+}
+
+.space02 {
+  width: var(--size-f-01);
+  height: var(--size-f-01);
+  background-color: var(--grey-300);
+}
+
+.space03 {
+  width: var(--size-f-02);
+  height: var(--size-f-02);
+  background-color: var(--grey-300);
+}
+
+.space04 {
+  width: var(--size-f-03);
+  height: var(--size-f-03);
+  background-color: var(--grey-300);
+}
+
+.space05 {
+  width: var(--size-f-04);
+  height: var(--size-f-04);
+  background-color: var(--grey-300);
+}
+
+.space06 {
+  width: var(--size-f-05);
+  height: var(--size-f-05);
+  background-color: var(--grey-300);
+}
+
+.space07 {
+  width: var(--size-f-06);
+  height: var(--size-f-06);
+  background-color: var(--grey-300);
+}

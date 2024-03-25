@@ -1,0 +1,96 @@
+.color_item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-f-03);
+  padding: var(--size-f-02);
+  line-height: 1.2;
+
+  & .color__block {
+    width: var(--size-f-04);
+    height: var(--size-f-04);
+    line-height: 1.2;
+    border-radius: 50%;
+  }
+
+  & .text__block {
+    width: calc(100% - var(--size-f-04) - var(--size-f-03));
+  }
+
+  & .title {
+    margin: 0 0 var(--base-size-4px);
+    font-weight: 500;
+    color: var(--base-font-color);
+  }
+
+  & .primitive {
+    padding-left: 1em;
+    font: var(--supplement-m);
+    color: var(--color-description-text);
+    text-indent: -1em;
+  }
+
+  & .semantic {
+    min-height: 34px;
+    padding-left: 1em;
+    font: var(--supplement-m);
+    color: var(--color-description-text);
+    text-indent: -1em;
+  }
+
+  &.is_solid {
+    & .color__block {
+      border: solid var(--color-border-field);
+    }
+  }
+
+  &.is_dark {
+    background: var(--color-dark-theme-bg);
+
+    & .title {
+      color: var(--color-base-text-dark);
+    }
+
+    & .primitive {
+      color: var(--color-description-text-dark);
+    }
+
+    & .semantic {
+      color: var(--color-description-text-dark);
+    }
+
+    &.is_solid {
+      & .color__block {
+        border: solid var(--color-border-field-dark);
+      }
+    }
+  }
+  @each $color in --color-base-text, --color-base-text-dark, --color-description-text, --color-description-text-dark, --color-place-holder-text, --color-place-holder-text-dark, --color-on-fill-text,
+    --color-link-text, --color-link-text-dark, --color-hover-text, --color-hover-text-dark, --color-active-text, --color-active-text-dark, --color-visited-text, --color-visited-text-dark,
+    --color-alert-text, --color-alert-text-dark, --color-disabled-text, --color-disabled-text-dark, --color-bg-primary, --color-bg-primary-dark, --color-bg-secondary, --color-bg-secondary-dark,
+    --color-bg-tertiary, --color-bg-tertiary-dark, --color-icon-label, --color-icon-label-dark, --color-icon-active, --color-icon-active-dark, --color-icon-alert, --color-icon-alert-dark,
+    --color-icon-disabled, --color-icon-disabled-dark, --color-status-information, --color-status-information-dark, --color-status-information-contrast-text, --color-status-success,
+    --color-status-success-contrast-text, --color-status-success-dark, --color-status-alert, --color-status-alert-dark, --color-status-alert-contrast-text, --color-status-warning,
+    --color-status-warning-dark, --color-status-warning-contrast-text, --color-button-normal, --color-button-normal-dark, --color-button-hover, --color-button-hover-dark, --color-button-active,
+    --color-button-active-dark, --color-button-disabled, --color-button-disabled-dark, --color-chart-primary, --color-chart-primary-dark, --color-chart-secondary, --color-chart-secondary-dark,
+    --color-dark-theme-bg, --color-light-theme-bg, --white, --black, --grey-900, --grey-800, --grey-700, --grey-600, --grey-536, --grey-500, --grey-417, --grey-400, --grey-300, --grey-200, --grey-100,
+    --grey-50, --blue-1200, --blue-1100, --blue-1000, --blue-900, --blue-800, --blue-700, --blue-600, --blue-500, --blue-400, --blue-300, --blue-200, --blue-100, --blue-50, --light-blue-1200,
+    --light-blue-1100, --light-blue-1000, --light-blue-900, --light-blue-800, --light-blue-700, --light-blue-600, --light-blue-500, --light-blue-400, --light-blue-300, --light-blue-200,
+    --light-blue-100, --light-blue-50, --cyan-1200, --cyan-1100, --cyan-1000, --cyan-900, --cyan-800, --cyan-700, --cyan-600, --cyan-500, --cyan-400, --cyan-300, --cyan-200, --cyan-100, --cyan-50,
+    --green-1200, --green-1100, --green-1000, --green-900, --green-800, --green-700, --green-600, --green-500, --green-400, --green-300, --green-200, --green-100, --green-50, --lime-1200, --lime-1100,
+    --lime-1000, --lime-900, --lime-800, --lime-700, --lime-600, --lime-500, --lime-400, --lime-300, --lime-200, --lime-100, --lime-50, --yellow-1200, --yellow-1100, --yellow-1000, --yellow-900,
+    --yellow-800, --yellow-700, --yellow-600, --yellow-500, --yellow-400, --yellow-300, --yellow-200, --yellow-100, --yellow-50, --orange-1200, --orange-1100, --orange-1000, --orange-900, --orange-800,
+    --orange-700, --orange-600, --orange-500, --orange-400, --orange-300, --orange-200, --orange-100, --orange-50, --red-1200, --red-1100, --red-1000, --red-900, --red-800, --red-700, --red-600,
+    --red-500, --red-400, --red-300, --red-200, --red-100, --red-50, --magenta-1200, --magenta-1100, --magenta-1000, --magenta-900, --magenta-800, --magenta-700, --magenta-600, --magenta-500,
+    --magenta-400, --magenta-300, --magenta-200, --magenta-100, --magenta-50, --purple-1200, --purple-1100, --purple-1000, --purple-900, --purple-800, --purple-700, --purple-600, --purple-500,
+    --purple-400, --purple-300, --purple-200, --purple-100, --purple-50 {
+    .color$(color) {
+      background-color: var($(color));
+    }
+  }
+  @each $color in --color-border-field, --color-border-field-dark, --color-border-divider, --color-border-divider-dark, --color-border-focused, --color-border-focused-dark, --color-border-selected,
+    --color-border-selected-dark, --color-border-alert, --color-border-alert-dark, --color-border-disabled, --color-border-disabled-dark {
+    .color$(color) {
+      border: solid var($(color));
+    }
+  }
+}
