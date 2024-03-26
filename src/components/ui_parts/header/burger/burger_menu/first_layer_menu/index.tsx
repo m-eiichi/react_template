@@ -8,7 +8,9 @@ export const FirstLayerMenu = (props: any): ReactElement => {
     <div className={Styles.menu__first__layer}>
       <ul className={Styles.menu__first__layer__top} role="list">
         <li>
-          <Link to="/">home</Link>
+          <Link to="/" onClick={props.onClick}>
+            home
+          </Link>
         </li>
         <li>
           <p
@@ -20,15 +22,13 @@ export const FirstLayerMenu = (props: any): ReactElement => {
           </p>
         </li>
         <li>
-          <Link
-            to="page1"
+          <p
             data-menu-id="2"
             onMouseOver={props.handleMouseOver}
             onMouseLeave={props.handleMouseLeave}
-            onClick={props.onClick}
           >
             ui elements
-          </Link>
+          </p>
         </li>
         <li>
           <p

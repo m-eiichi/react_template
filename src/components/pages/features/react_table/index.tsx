@@ -119,7 +119,8 @@ export const ReactTablePage = (): ReactElement => {
 
   return (
     <section className={Styles.large_section}>
-      <Headline>React Table Test</Headline>
+      <Headline size="xl">React Template</Headline>
+      <Headline size="m">&lt; React Table Test &gt;</Headline>
       <TableRT tableInstance={table} size="m" fixedColumn={2} />
     </section>
   );

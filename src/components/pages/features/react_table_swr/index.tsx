@@ -106,7 +106,8 @@ export const ReactSwrTablePage = (): ReactElement => {
 
   return (
     <section className={Styles.large_section}>
-      <Headline>React Table Test（SWR）</Headline>
+      <Headline size="xl">React Template</Headline>
+      <Headline size="m">&lt; React Table Test（SWR） &gt;</Headline>
       <TableRT tableInstance={tableInstance} size="m" />
     </section>
   );

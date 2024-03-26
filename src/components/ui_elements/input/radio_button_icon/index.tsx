@@ -14,7 +14,7 @@ export const RadioButtonIcon = (props: RadioButtonIconProps): ReactElement => {
         id={id}
         name={name}
         value={value}
-        checked={checked}
+        defaultChecked={checked}
         {...register}
       />
       <label className={icon.join(" ")} htmlFor={id}></label>
