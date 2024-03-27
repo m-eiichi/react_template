@@ -1,32 +1,23 @@
-<details><summary>初回導入</summary>
+# プロジェクトについて
+reactの汎用的コンポーネント集　
+　
+## 環境
+- node 20.10.0
+- react ^18.2.0
+- vite 5.0.0
 
-### I. Docker環境を準備
+## 初回導入
 
-環境を構築
+### I. nodeの環境を準備
+dockerなどでnodeを実行できる環境を構築
 
-### II. 開発コンテナを開く
+### II. gitクローン
+1. 任意のディレクトリに移動
+2. このリポジトリをgit cloneする
 
-```
-Dev Containers: Open Folder in Container...
-```
-
-### III. gitクローン
-
-1. Dir移動
-
-```
-cd /usr/src/app/
-```
-
-2. リポジトリをgit cloneする
-
-### IV. ライブラリ解決
-
-```
-yarn
-```
-
-</details>
+### III. ライブラリ解決
+ターミナルでyarnしてリポジトリで使われるライブラリを解決する
+ 
 
 ## 開発時コマンド
 
@@ -38,3 +29,6 @@ yarn
 | Webサービス起動 | `yarn dev`       | `http://localhost:5173/` |
 | UIカタログ起動  | `yarn storybook` | `http://localhost:6006/` |
 | ビルド          | `yarn build`     |                          |
+
+
+[開発標準](./react_template_docs/index.md)
