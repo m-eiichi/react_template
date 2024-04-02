@@ -4,7 +4,7 @@ import { InputButtonProps } from "./types";
 import Styles from "./input_button.module.css";
 
 export const InputButton = (props: InputButtonProps): ReactElement => {
-  const { id, type, value, color, size, fullWidth } = props;
+  const { id, type, value, color, size, disabled, fullWidth } = props;
   const className = [
     Styles.button,
     color !== undefined ? Styles[`${color}`] : Styles.primary,
@@ -17,6 +17,7 @@ export const InputButton = (props: InputButtonProps): ReactElement => {
       id={id}
       type={type == null ? "button" : type}
       value={value}
+      disabled={disabled}
     />
   );
 };
