@@ -36,12 +36,12 @@ export const TextAreaElement = <T extends FieldValues>(
       className={textarea.join(" ")}
       id={id}
       name={name}
-      {...register}
       rows={rows}
       cols={cols}
       placeholder={placeHolder}
       readOnly={readonly}
       disabled={disabled}
+      {...register}
     />
   );
 };

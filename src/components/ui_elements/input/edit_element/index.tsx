@@ -4,11 +4,31 @@ import { type FieldValues } from "react-hook-form";
 import { EditElementProps } from "./types";
 import Styles from "./edit_element.module.css";
 
-export const EditElement = <T extends FieldValues>(props: EditElementProps<T>): ReactElement => {
-  const { size, register, id, type, name, fullWidth, readonly, disabled, defaultvalue, errors, placeholder } = props;
+export const EditElement = <T extends FieldValues>(
+  props: EditElementProps<T>,
+): ReactElement => {
+  const {
+    size,
+    register,
+    id,
+    type,
+    name,
+    fullWidth,
+    readonly,
+    disabled,
+    defaultvalue,
+    errors,
+    placeholder,
+  } = props;
 
   const input = [
-    type === "color" ? Styles.input_color : type === "file" ? Styles.input_file : type === "range" ? Styles.input_range : Styles.input,
+    type === "color"
+      ? Styles.input_color
+      : type === "file"
+        ? Styles.input_file
+        : type === "range"
+          ? Styles.input_range
+          : Styles.input,
     size === undefined ? Styles.l : Styles[size],
     errors !== undefined ? Styles.error : "",
     fullWidth === true ? Styles.full_width : "",
@@ -22,10 +42,10 @@ export const EditElement = <T extends FieldValues>(props: EditElementProps<T>): 
       type={type === null ? "text" : type}
       name={name}
       placeholder={placeHolder}
-      {...register}
       readOnly={readonly}
       disabled={disabled}
       defaultValue={defaultvalue}
+      {...register}
     />
   );
 };

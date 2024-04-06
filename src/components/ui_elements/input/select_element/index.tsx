@@ -31,9 +31,9 @@ export const SelectElement = <T extends FieldValues>(
       className={select.join(" ")}
       id={id}
       disabled={disabled}
-      {...register}
       name={name}
       defaultValue={defaultvalue}
+      {...register}
     >
       {options &&
         options.map((optinon: OptionProps) => {

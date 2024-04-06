@@ -39,10 +39,12 @@ export const CheckBoxes = <T extends FieldValues>(
 
   return (
     <div className={container.join(" ")}>
-      <div>
-        <Label text={label} requirement={requirement} disabled={disabled} />
-        <SupportText disabled={disabled}>{supportText}</SupportText>
-      </div>
+      {(label || supportText || requirement) && (
+        <div>
+          <Label text={label} requirement={requirement} disabled={disabled} />
+          <SupportText disabled={disabled}>{supportText}</SupportText>
+        </div>
+      )}
       <div className={checkbox_container.join(" ")}>
         {items &&
           items.map((item: CheckBoxItemProps) => {
